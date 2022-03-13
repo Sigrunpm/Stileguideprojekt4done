@@ -1,0 +1,512 @@
+
+/*Grundlæggende indhold*/
+body {
+  background-color: white;
+  margin: none;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+/*Selve header - logo - overskrift*/
+.header {   
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+  border: 0px;
+  border-radius: 12px;
+  background-color: rgb(241,200,192);
+} 
+
+.logo {
+  float: left;
+  width: 15%;
+}
+
+.overskrift {
+    color: rgb(0,69,78);
+    position: absolute;
+    font-size: 3vw;
+    margin-inline-start: 20%;
+    margin-block-start: 0%;
+  }
+
+  /*Div til venstre, som indeholder vores navbar*/
+  .side {
+    width: 25%;
+    padding-top: 2%;
+    display: inline-start;
+  }
+
+   /*Grundlæggende for navbar*/
+  .topnav1 {
+    overflow: hidden;
+  }
+  
+  /*Designet navbar*/
+  .topnav1 a {
+    width: 87%;
+    float: right;
+    background-color: rgb(0,69,78);
+    color: rgb(255, 246, 246);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1,5vw;
+    margin: 2px;
+    border: 2px solid rgb(0,69,78);
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  /*Når musen er over en knap i navn bar, skifter knappen farve og får en baggrundsskygge*/
+  .topnav1 a:hover {
+    border-radius: 12px;
+    background-color: rgb(241,200,192);
+    color: rgb(0,69,78);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  /*Når du er inde under en knap, er farven ændret fast*/
+  .topnav1 a.active {
+    background-color: rgb(241,200,192);
+    color: rgb(0,69,78);
+    border-radius: 12px;
+  }
+
+  /*Div til højre - herunder vores funktioner med kode kommer*/
+  .row {  
+    width: 70%;
+    float: right;
+    padding: 2%;
+    margin-top: -570px;
+  }
+
+   /*Eksempler: Knapper*/
+ .topnav1 a.button1 {
+  width: 50%;
+  display: inline-start;
+  float: left; 
+}
+
+.tekst {
+ display: inline-block;vertical-align: top;
+}
+ 
+
+
+
+/*vores footer*/ 
+ .bund {
+  position:absolute;
+  
+   width: 100%;
+   text-align: center;
+   background-color: rgb(241,200,192);
+   color: rgb(0,69,78);
+   font-size: 1vw;
+   border-radius: 12px;
+   padding: 5px;
+   margin-top: 200px;
+ }
+
+ #page-container1 {
+  position: relative;
+  min-height: 55vh; 
+}
+#page-container {
+  position: relative;
+  min-height: 50vh; 
+}
+#page-container3 {
+  position: relative;
+  min-height: 20vh; 
+}
+
+/*Eksempel: Farver*/
+.farve {
+    width: 30%;
+}
+.html2 {
+    width: 50%;
+    display: inline-start;
+    float: left;
+}
+
+.css2 {
+    width: 50%;
+    display: inline-start;
+    float: left; 
+}
+
+/*Eksempel: Search*/
+*{
+    box-sizing: border-box;
+}
+ 
+    /*style til søgefeltet*/
+    form.søg input[type=text]{
+        padding: 10px;
+        font-size: 17px;
+        border: solid transparent;
+        float: left;
+        width: 150px;
+        background: #fff;
+        border-radius: 10px;
+        border: 2px solid #00454E;
+    }
+ 
+
+    /*style til søge-knappen*/
+    form.søg button{
+        margin-left: -40px;
+        margin-top: 5px;
+        float: left;
+        width: 30px;
+        padding: 5px;
+        background-color: #FFF;
+        color: #00454E;
+        font-size: 17px;
+        border: solid transparent;
+        border-left: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+
+/* Det næste lange stykke, er stile af vores profilbilleder galleri */
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Rammen omkring vores galleri */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: rgb(241,200,192);
+}
+
+/* pilene frem og tilbage, hvor vi kan skifte billede */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* farven skifter */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* stile og placering af billeder */
+.imgpro {
+  width: 50%;
+  margin-left: 25%;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+ /*Navbar styling*/
+ .navbar{
+  overflow: hidden;
+  background-color: #F1C8C0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Style navigation menulinks*/
+.navbar a{
+  color: #00454E;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 40px;
+  display: block;  
+}
+.btn{
+  color: #00454E;
+  border: none;
+  background-color: #F1C8C0;
+  margin-left: 0px;
+  font-size: 10px;
+  text-align: left;
+}
+
+  /*burgermenu*/
+      #burgermenu {
+          cursor: pointer;
+          height: 27px;
+          width: 27px;
+          margin: 50px;
+          overflow: visible;
+          position: relative;
+          z-index:2;
+      }
+      #burgermenu span,
+      #burgermenu span:before,
+      #burgermenu span:after {
+          background: #00454E;
+          display: block;
+          height: 2px;
+          opacity: 1;
+          position: absolute;
+          transition: 0.3s ease-in-out;
+      }
+      #burgermenu span:before,
+      #burgermenu span:after {
+          content: "";
+      }
+      #burgermenu span {
+          right: 0px;
+          top: 13px;
+          width: 27px;
+      }
+      #burgermenu span:before {
+          left: 0px;
+          top: -10px;
+          width: 27px;
+      }
+      #burgermenu span:after {
+          left: 0px;
+          top: 10px;
+          width: 27px;
+      }
+     
+      #burgermenu.close span {
+          transform: rotate(-45deg);
+          top: 13px;
+          width: 27px;
+      }
+      #burgermenu.close span:before {
+          top: 0px;
+          transform: rotate(90deg);
+          width: 27px;
+      }
+      #burgermenu.close span:after {
+          top: 0px;
+          left:0;
+          transform: rotate(90deg);
+          opacity:0;
+          width:0;
+      }
+      #menu{
+          z-index:1;
+          min-width:100%;
+          min-height:100%;
+          position: fixed;
+          top:0;
+          height:0;
+          visibility: hidden;
+          opacity: 0;
+          text-align:right;
+          padding-top:20px;
+          transition: all 0.3s ease-in-out;
+      }
+      #menu.overlay{
+          visibility: visible;
+          padding-top:100px;
+          background-color:#fff;
+          opacity: 80%;
+      }
+      #menu li{
+          list-style:none;
+      }
+      #menu a{
+          color:#00454E;
+          display:block;
+          font-size: 20px;
+          margin-bottom:30px;
+          text-decoration:none;
+      }
+
+        /*Designet navbar*/
+  .topnav10 a {
+    width: 87%;
+    float: right;
+    color: rgb(255, 246, 246);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1,5vw;
+    margin: 2px;
+    border: solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .topnav11 a {
+    width: 87%;
+    float: right;
+    background-color: transparent;
+    color: rgb(255, 246, 246);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1,5vw;
+    margin: 2px;
+    border: solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  #foot {
+    text-align: center;
+    background-image: linear-gradient(white, #dadada 60%);
+    color: white;
+    padding: 0 24px;
+    width: 100%;
+}
+ 
+.footerbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    color: black;
+}
+ 
+.btn{
+    color: #00454E;
+    border: none;
+    margin-left: 0px;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 1440px) { 
+.header {
+  height: 200px;
+}
+.row {
+  margin-top: -543px;
+}
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .header {
+      height: 150px;
+    }
+    #page-container3 {
+      min-height: 0vh;
+    }
+    .row {
+      margin-top: -535px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      height: 120px;
+    }
+    #page-container3 {
+      min-height: -100vh;
+    }
+    #page-container1 {
+      min-height: 60vh;
+    }
+    .row {
+      margin-top: -530px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 426px) {
+    .header {
+      height: 80px;
+    }
+    #page-container3 {
+      min-height: -100vh;
+    }
+    .row {
+      margin-top: -523px;
+    }
+    .navbar {
+      width: 100%;
+      height: 50px;
+    }
+    a.btn {
+      font-size: 10px;
+    }
+    button {
+      font-size: 10px;
+    }
+    form.søg input[type=text] {
+      font-size: 10px;
+      width: 100px;
+    }
+    .fa-search:before {
+      font-size: 10px;
+    }
+    form.søg button {
+      margin-top: 5px;
+      padding: 0px;
+    }
+   
+
+  }
+   
+  
+  
+   @media screen and (max-width: 376px) {
+    .header {
+      height: 60px;
+    }
+  
+   }
